@@ -21,7 +21,7 @@ printf("[0] (nil)\n");
 else
 printf("[%u] %s\n", u->len, u->str);
 u = u->next;
-n++
+n++;
 }
 
 return (n);
