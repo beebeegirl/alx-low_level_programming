@@ -4,23 +4,23 @@
 
 /**
  * print_list - prints all the elements of a list_t
- * @u: pointer to the list_t list to print
+ * @h: pointer to the list_t list to print
  *
  * Return: the number of nodes printed
  */
-size_t print_list(const list_t *u)
+size_t print_list(const list_t *h)
 {
 size_t n = 0;
 
-while (u)
+while (h)
 {
-if (u->str)
+if (h->str)
 {
 printf("[0] (nil)\n");
 }
 else
-printf("[%u] %s\n", u->len, u->str);
-u = u->next;
+printf("[%u] %s\n", h->len, h->str);
+h = h->next;
 n++;
 }
 
