@@ -4,31 +4,23 @@
 
 #include <stdio.h>
 
-
-
 #define ERR_MSG "Error"
 
-
-
 /**
-
- * is_digit - It checks if a string contains a non-digit character
-
- * @s: string that needs evaluation
-
- *
-
- * Return: 0 If it finds a non-digit, and 1 if not
-
- */
+*is_digit - checks for string with a non-digit char
+*@s: string that needs evaluation
+*
+*Description:
+*A program that multiplies two positive numbs
+*
+* Return: 0 If it finds a non-digit, and 1 if not
+*/
 
 int is_digit(char *s)
 
 {
 
 	int i = 0;
-
-
 
 	while (s[i])
 
@@ -46,27 +38,17 @@ int is_digit(char *s)
 
 }
 
-
-
 /**
-
- * _strlen - It returns the length of string
-
- * @s: The string that needs evaluation
-
- *
-
- * Return: The length of strings
-
- */
+*_strlen - It returns the length of string
+*@s: The string that needs evaluation
+*
+*Return: The length of strings
+*/
 
 int _strlen(char *s)
 
 {
-
 	int i = 0;
-
-
 
 	while (s[i] != '\0')
 
@@ -80,39 +62,26 @@ int _strlen(char *s)
 
 }
 
-
-
 /**
-
- * errors - It handles all the errors for main
-
- */
+*errors - It handles all the errors for main
+*/
 
 void errors(void)
 
 {
 
 	printf("Error\n");
-
 	exit(98);
 
 }
 
-
-
 /**
-
- * main - multiplies two postv numbs
-
- * @argc: The number of args
-
- * @argv: The array of args
-
- *
-
- * Return: always 0
-
- */
+*main - multiplies two postv numbs
+*@argc: The number of args
+*@argv: The array of args
+*
+*Return: always 0
+*/
 
 int main(int argc, char *argv[])
 
@@ -121,8 +90,6 @@ int main(int argc, char *argv[])
 	char *s1, *s2;
 
 	int len1, len2, len, i, carry, digit1, digit2, *result, a = 0;
-
-
 
 	s1 = argv[1], s2 = argv[2];
 
@@ -151,7 +118,6 @@ int main(int argc, char *argv[])
 	{
 
 		digit1 = s1[len1] - '0';
-
 		carry = 0;
 
 		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
