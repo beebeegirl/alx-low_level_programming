@@ -4,7 +4,7 @@
 
 /**
  * free_listint_safe -  function that frees a listint_t list
- * @head: points to the node
+ * @h: head pointer points to the node
  *
  * Return: size of the list that was free’d
  */
