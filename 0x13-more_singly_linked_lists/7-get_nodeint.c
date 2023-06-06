@@ -1,17 +1,18 @@
 #include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * get_nodeint_at_index- function that returns the nth node of a listint_t
  * @head: points the first node
  * @index: index of the node
  *
- * Return: NULL if node does not exist
+ * Return:pointer of index or NULL
  */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	unsigned int i;
-	listint_t *head;
 
 	if (head == NULL)
 		return (NULL);
