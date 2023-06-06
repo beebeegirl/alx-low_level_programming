@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _strdup - returns a pointer to new memory space location with a copy of the string
+ * _strdup - returns a pointer to new mem space locatn with a copy of the strng
  * @str: char
  * Return: 0
  */
