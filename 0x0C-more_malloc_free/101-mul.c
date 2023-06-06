@@ -1,7 +1,5 @@
 #include "main.h"
-
 #include <stdlib.h>
-
 #include <stdio.h>
 
 #define ERR_MSG "Error"
@@ -163,5 +161,4 @@ int main(int argc, char *argv[])
 	free(result);
 
 	return (0);
-
 }

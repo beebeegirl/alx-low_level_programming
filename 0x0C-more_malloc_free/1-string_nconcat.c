@@ -1,18 +1,16 @@
 #include <stdlib.h>
-
+#include <stdio.h>
 #include "main.h"
 
 /**
-*string_nconcat Concat two strings
+*string_nconcat- This function Concatenates two strings
 *@s1: string to add to
 *@s2: string to concat from
 *@n: The numb of bytes for s1 s2
 *
-*Description:
-*A function that concatenates two strings
-*
-*Return: The pointr to resulting strng
+*Return: NULL if function fails
 */
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
