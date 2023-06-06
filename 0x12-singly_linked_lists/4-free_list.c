@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * free_list Frees a list_t list
+ * free_list - This is a function that frees a list_t list
  * @head: list_t list to be freed
  */
 void free_list(list_t *head)
