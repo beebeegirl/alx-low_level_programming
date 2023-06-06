@@ -11,27 +11,28 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *start;
-	listint_t *loop;
+listint_t *start;
+listint_t *loop;
 
-	start = loop = head;
-	while (start && loop && loop->next)
-	{
-		start = start->next;
-		loop = loop->next->next;
-		if (start == loop)
-		{
+start = loop = head;
+while (start && loop && loop->next)
+{
+start = start->next;
+loop = loop->next->next;
+if (start == loop)
+{
 
-			start = head;
-			break;
-		}
-	}
-	if (!start || !loop || !loop->next)
-		return (NULL);
-	while (start != loop)
-			{
-				start = start->next;
-				loop = loop->next;
-			}
-			return (loop);
+start = head;
+break;
+}
+}
+if (!start || !loop || !loop->next)
+return (NULL);
+
+while (start != loop)
+{
+start = start->next;
+loop = loop->next;
+}
+return (loop);
 }
