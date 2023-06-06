@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint_end - function that adds new node at the end of listint_t list
- * @h: head
+ * @head:head pointer
  * @n: int added at the end of list
  *
  * Return: the address of the new element, or NULL if it failed
